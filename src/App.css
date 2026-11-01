@@ -1,0 +1,34 @@
+#root {}
+
+/* Suspense fallback shown while a page chunk loads */
+.page-loader {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.page-loader img {
+  width: 56px;
+  height: auto;
+  animation: loaderPulse 1.2s ease-in-out infinite;
+}
+
+.page-loader span {
+  color: var(--navy, #0a1a44);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@keyframes loaderPulse {
+  0%, 100% { opacity: 0.55; transform: scale(0.96); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-loader img { animation: none; }
+}

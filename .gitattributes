@@ -1,0 +1,17 @@
+# core.autocrlf is on in this repo; keep git from ever applying text
+# conversion to binary assets (it would corrupt them).
+*.mp4  binary
+*.webm binary
+*.mov  binary
+*.mp3  binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.pdf   binary

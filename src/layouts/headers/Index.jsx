@@ -312,13 +312,13 @@ export default function Header() {
                     <Icon name="compass" />
                     <b>{"Consulting & Advisory"}</b>
                   </NavItem>
-                  <Link to="/consulting#co-assess" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/consulting" onClick={closeMenus} className="ms" role="menuitem">
                     Assessments
                   </Link>
-                  <Link to="/consulting#co-strategy" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/consulting" onClick={closeMenus} className="ms" role="menuitem">
                     {"Strategy & architecture"}
                   </Link>
-                  <Link to="/consulting#co-vendor" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/consulting" onClick={closeMenus} className="ms" role="menuitem">
                     {"Vendor selection & PMO"}
                   </Link>
                 </div>
@@ -333,7 +333,7 @@ export default function Header() {
                   <Link to="/data-center-it-network" onClick={closeMenus} className="ms" role="menuitem">
                     {"Racks, compute & network"}
                   </Link>
-                  <Link to="/data-center-ai#dc-ai" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/data-center-ai" onClick={closeMenus} className="ms" role="menuitem">
                     {"High-density & AI"}
                   </Link>
                 </div>
@@ -348,13 +348,13 @@ export default function Header() {
                     <Icon name="shield" />
                     <b>{"Cybersecurity & Resilience"}</b>
                   </NavItem>
-                  <Link to="/cybersecurity#cs-outcome" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/cybersecurity" onClick={closeMenus} className="ms" role="menuitem">
                     Security assessments
                   </Link>
-                  <Link to="/cybersecurity#cs-soc" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/cybersecurity" onClick={closeMenus} className="ms" role="menuitem">
                     {"SOC, SIEM & XDR"}
                   </Link>
-                  <Link to="/cybersecurity#cs-identity" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/cybersecurity" onClick={closeMenus} className="ms" role="menuitem">
                     {"Identity & Zero Trust"}
                   </Link>
                 </div>
@@ -363,13 +363,13 @@ export default function Header() {
                     <Icon name="cloud" />
                     <b>{"Cloud & Modernisation"}</b>
                   </NavItem>
-                  <Link to="/cloud#cl-multi" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/cloud" onClick={closeMenus} className="ms" role="menuitem">
                     {"Public, private & hybrid"}
                   </Link>
-                  <Link to="/cloud#cl-migration" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/cloud" onClick={closeMenus} className="ms" role="menuitem">
                     {"Migration & modernisation"}
                   </Link>
-                  <Link to="/cloud#cl-security" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/cloud" onClick={closeMenus} className="ms" role="menuitem">
                     Cloud security
                   </Link>
                 </div>
@@ -384,13 +384,13 @@ export default function Header() {
                     <Icon name="apps" />
                     <b>Enterprise Applications</b>
                   </NavItem>
-                  <Link to="/applications#ap-erp" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/applications" onClick={closeMenus} className="ms" role="menuitem">
                     ERP: SAP, Oracle, D365
                   </Link>
-                  <Link to="/applications#ap-crm" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/applications" onClick={closeMenus} className="ms" role="menuitem">
                     CRM
                   </Link>
-                  <Link to="/applications#ap-plm" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/applications" onClick={closeMenus} className="ms" role="menuitem">
                     {"PLM & MES"}
                   </Link>
                 </div>
@@ -405,13 +405,13 @@ export default function Header() {
                     <Icon name="chart" />
                     <b>{"Data, Analytics & AI"}</b>
                   </NavItem>
-                  <Link to="/data-analytics#da-platforms" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/data-analytics" onClick={closeMenus} className="ms" role="menuitem">
                     Data platforms
                   </Link>
-                  <Link to="/data-analytics#da-dashboards" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/data-analytics" onClick={closeMenus} className="ms" role="menuitem">
                     BI dashboards
                   </Link>
-                  <Link to="/data-analytics#da-advanced" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/data-analytics" onClick={closeMenus} className="ms" role="menuitem">
                     Advanced analytics
                   </Link>
                 </div>
@@ -426,13 +426,13 @@ export default function Header() {
                     <Icon name="laptop" />
                     <b>{"Digital Workplace & Automation"}</b>
                   </NavItem>
-                  <Link to="/digital-workplace#dw-euc" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/digital-workplace" onClick={closeMenus} className="ms" role="menuitem">
                     End-user computing
                   </Link>
-                  <Link to="/digital-workplace#dw-m365" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/digital-workplace" onClick={closeMenus} className="ms" role="menuitem">
                     Microsoft 365
                   </Link>
-                  <Link to="/digital-workplace#dw-mdm" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/digital-workplace" onClick={closeMenus} className="ms" role="menuitem">
                     Device management
                   </Link>
                 </div>
@@ -447,13 +447,13 @@ export default function Header() {
                     <Icon name="headset" />
                     <b>Managed IT Services</b>
                   </NavItem>
-                  <Link to="/managed-services#ms-noc" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/managed-services" onClick={closeMenus} className="ms" role="menuitem">
                     Managed NOC
                   </Link>
-                  <Link to="/managed-services#ms-soc" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/managed-services" onClick={closeMenus} className="ms" role="menuitem">
                     Managed SOC
                   </Link>
-                  <Link to="/managed-services#ms-cloud" onClick={closeMenus} className="ms" role="menuitem">
+                  <Link to="/managed-services" onClick={closeMenus} className="ms" role="menuitem">
                     Cloud operations
                   </Link>
                 </div>
@@ -599,7 +599,7 @@ export default function Header() {
                   <small className="dl-gh">Popular industries</small>
                   <div className="dl-grid one">
                     <Link
-                      to="/industries-financial-services#ins-fs-c0"
+                      to="/industries-financial-services"
                       onClick={closeMenus}
                       className="dl-mi"
                       role="menuitem"
@@ -613,7 +613,7 @@ export default function Header() {
                       </span>
                     </Link>
                     <Link
-                      to="/industries-public-sector-health#ins-ph-c2"
+                      to="/industries-public-sector-health"
                       onClick={closeMenus}
                       className="dl-mi"
                       role="menuitem"
@@ -627,7 +627,7 @@ export default function Header() {
                       </span>
                     </Link>
                     <Link
-                      to="/industries-manufacturing#ins-pm-c1"
+                      to="/industries-manufacturing"
                       onClick={closeMenus}
                       className="dl-mi"
                       role="menuitem"
@@ -641,7 +641,7 @@ export default function Header() {
                       </span>
                     </Link>
                     <Link
-                      to="/industries-technology-media-telecom#ins-cmt-c0"
+                      to="/industries-technology-media-telecom"
                       onClick={closeMenus}
                       className="dl-mi"
                       role="menuitem"
@@ -655,7 +655,7 @@ export default function Header() {
                       </span>
                     </Link>
                     <Link
-                      to="/industries-technology-media-telecom#ins-cmt-c4"
+                      to="/industries-technology-media-telecom"
                       onClick={closeMenus}
                       className="dl-mi"
                       role="menuitem"
@@ -669,7 +669,7 @@ export default function Header() {
                       </span>
                     </Link>
                     <Link
-                      to="/industries-services-infrastructure#ins-si-c1"
+                      to="/industries-services-infrastructure"
                       onClick={closeMenus}
                       className="dl-mi"
                       role="menuitem"

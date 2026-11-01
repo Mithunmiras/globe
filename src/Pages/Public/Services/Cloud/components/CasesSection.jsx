@@ -16,7 +16,7 @@ export default function CasesSection() {
         <div className="cases-grid" data-cases="cloud" data-dyn="">
           <article className="case-card">
             <div className="case-media">
-              <img src="assets/img/network.jpg" alt="" />
+              <img src="/images/img-74-461f077cff.jpg" alt="" />
               <span className="case-tag">Case study</span>
             </div>
             <div className="case-body">

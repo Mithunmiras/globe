@@ -16,7 +16,7 @@ export default function CasesSection() {
         <div className="cases-grid" data-cases="ai-automation" data-dyn="">
           <article className="case-card">
             <div className="case-media">
-              <img src="assets/img/ai-racks.jpg" alt="" />
+              <img src="/images/img-75-2429d4d2b4.jpg" alt="" />
               <span className="case-tag">Case study</span>
             </div>
             <div className="case-body">
@@ -89,7 +89,7 @@ export default function CasesSection() {
           </article>
           <article className="case-card">
             <div className="case-media">
-              <img src="assets/img/dc-building.jpg" alt="" />
+              <img src="/images/img-45-f832ee6b68.jpg" alt="" />
               <span className="case-tag">Case study</span>
             </div>
             <div className="case-body">

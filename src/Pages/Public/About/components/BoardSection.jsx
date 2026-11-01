@@ -17,12 +17,12 @@ export default function BoardSection() {
         <div className="board" id="board-list" data-dyn="">
           <article className="card bd-card">
             <div className="bd-ph">
-              <img src="/images/img-49-3b2a6674cd.jpg" alt="Geethika Rao" />
+              <img src="/images/img-49-3b2a6674cd.jpg" alt="Githikka Rao" />
             </div>
             <div className="person">
               <div>
                 <div className="role">Founder</div>
-                <h3>Geethika Rao</h3>
+                <h3>Githikka Rao</h3>
               </div>
               <p className="bio">
                 Founder of Digital Globe Consultancy, currently pursuing MBBS while exploring technology and IT. A
@@ -32,7 +32,7 @@ export default function BoardSection() {
               <button type="button" className="bio-more">
                 Read more
               </button>
-              <Link to="/geethika-rao" className="prof-link">
+              <Link to="/githikka-rao" className="prof-link">
                 View full profile →
               </Link>
             </div>

@@ -8,7 +8,7 @@ import AppLayout from "../../layouts/Index";
 const PageNotFound = React.lazy(() => import("../PageNotFound/Index"));
 const About = React.lazy(() => import("./About/Index"));
 const KavyallataRao = React.lazy(() => import("./Founders/KavyallataRao/Index"));
-const GeethikaRao = React.lazy(() => import("./Founders/GeethikaRao/Index"));
+const GithikkaRao = React.lazy(() => import("./Founders/GithikkaRao/Index"));
 const DataCenter = React.lazy(() => import("./DataCenter/Index"));
 const DataCenterStrategy = React.lazy(() => import("./DataCenter/Strategy/Index"));
 const DataCenterDesign = React.lazy(() => import("./DataCenter/Design/Index"));
@@ -54,7 +54,7 @@ const Index = () => {
             <Route path="/" element={<LandingPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/kavyallata-rao" element={<KavyallataRao />} />
-            <Route path="/geethika-rao" element={<GeethikaRao />} />
+            <Route path="/githikka-rao" element={<GithikkaRao />} />
             <Route path="/data-center" element={<DataCenter />} />
             <Route path="/data-center-strategy" element={<DataCenterStrategy />} />
             <Route path="/data-center-design" element={<DataCenterDesign />} />

@@ -23,17 +23,17 @@ export default function FoundersSection() {
         <div className="fd-grid" data-reveal="">
           <article className="fd-card" style={{ "--i": "0" }}>
             <div className="fd-ph">
-              <img src="/images/img-49-3b2a6674cd.jpg" alt="Geethika Rao" loading="lazy" />
+              <img src="/images/img-49-3b2a6674cd.jpg" alt="Githikka Rao" loading="lazy" />
             </div>
             <div className="fd-body">
               <span className="fd-role">Founder</span>
-              <h3>Geethika Rao</h3>
+              <h3>Githikka Rao</h3>
               <p>
                 Founder of Digital Globe Consultancy, currently pursuing MBBS while exploring technology and IT. A
                 former international-level Taekwondo athlete with 120+ medals and 2 trophies, she also brings over 15
                 years of Bharatanatyam training and 8 years as a district-level skater.
               </p>
-              <Link to="/geethika-rao" className="fd-link">
+              <Link to="/githikka-rao" className="fd-link">
                 View full profile
                 <Icon name="arrow" />
               </Link>

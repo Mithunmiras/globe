@@ -37,7 +37,7 @@ const C=[
 const grid=R.getElementById('certs');let shown=C.map((_,i)=>i),cur=0;
 function render(f){
   shown=C.map((c,i)=>i).filter(i=>f==='all'||C[i].f===f);
-  grid.innerHTML=shown.map((i,k)=>{const c=C[i];return `<figure class="cert"><button type="button" data-k="${k}" aria-label="View ${c.t} full size"><img src="${IMG[c.img]}" alt="${c.t} certificate awarded to Kavyalatha Rao" loading="lazy"></button><figcaption><b>${c.t}</b><span>${c.by}</span><span>${c.d}</span>${c.id?`<code>Vide no: ${c.id}</code>`:''}</figcaption></figure>`}).join('');
+  grid.innerHTML=shown.map((i,k)=>{const c=C[i];return `<figure class="cert"><button type="button" data-k="${k}" aria-label="View ${c.t} full size"><img src="${IMG[c.img]}" alt="${c.t} certificate awarded to Kavyallata Rao" loading="lazy"></button><figcaption><b>${c.t}</b><span>${c.by}</span><span>${c.d}</span>${c.id?`<code>Vide no: ${c.id}</code>`:''}</figcaption></figure>`}).join('');
 }
 render('all');
 R.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{

@@ -1,8 +1,8 @@
 /* eslint-disable */
-// Behaviour for the geethika-rao profile. It runs against the shadow root that
+// Behaviour for the githikka-rao profile. It runs against the shadow root that
 // ShadowProfile attaches, and returns a teardown that undoes every timer and
 // window listener it registered.
-export default function initGeethikaRao(H, R) {
+export default function initGithikkaRao(H, R) {
   const teardown = [];
   const addEventListener = (type, fn, opts) => {
     window.addEventListener(type, fn, opts);

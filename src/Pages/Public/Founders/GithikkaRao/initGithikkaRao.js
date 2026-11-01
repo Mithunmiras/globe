@@ -37,12 +37,11 @@ R.querySelectorAll('.sec-head h2').forEach(h=>{h.innerHTML=h.textContent.split('
 /* observers */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;io.unobserve(el);
   if(el.dataset.to){const to=+el.dataset.to,suf=el.dataset.suf,t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/1400);el.textContent=Math.round(to*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(f)})(t0);el.closest('.stat').classList.add('lit')}
-  else{el.classList.remove('pending');if(el.id==='rail')el.classList.add('lit')}}),{threshold:.2});
+  else{el.classList.remove('pending')}}),{threshold:.2});
 if(!reduce){
   R.querySelectorAll('.stat b[data-to]').forEach(b=>{b.textContent='0'+b.dataset.suf;io.observe(b)});
   R.querySelectorAll('.sec-head,.dc').forEach((el,i)=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('rv','pending');if(el.matches('.dc'))el.style.transitionDelay=(i%5)*90+'ms';io.observe(el)}});
-  const rail=R.getElementById('rail');rail.classList.add('pending');rail.querySelectorAll('li').forEach((l,i)=>l.style.transitionDelay=(.2+i*.15)+'s');io.observe(rail);
-}else{R.getElementById('rail').classList.add('lit')}
+}
 /* scroll bar */
 const sb=R.getElementById('sbar');let raf=0;addEventListener('scroll',()=>{if(raf)return;raf=requestAnimationFrame(()=>{raf=0;const m=document.documentElement.scrollHeight-innerHeight;sb.style.transform=`scaleX(${m>0?scrollY/m:0})`})},{passive:true});
 /* tilt + glow */

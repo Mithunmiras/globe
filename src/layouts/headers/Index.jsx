@@ -163,27 +163,27 @@ export default function Header() {
                   </div>
                   <div className="dl-thumbs">
                     <Link to="/data-center-strategy" onClick={closeMenus} role="menuitem" style={{ "--i": "0" }}>
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-02-9247f20ff2.jpg" alt="" loading="lazy" />
                       <span>Strategy</span>
                     </Link>
                     <Link to="/data-center-design" onClick={closeMenus} role="menuitem" style={{ "--i": "1" }}>
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-03-667c99b746.jpg" alt="" loading="lazy" />
                       <span>Design</span>
                     </Link>
                     <Link to="/data-center-build" onClick={closeMenus} role="menuitem" style={{ "--i": "2" }}>
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-04-1a2fe92a5e.jpg" alt="" loading="lazy" />
                       <span>Build</span>
                     </Link>
                     <Link to="/data-center-operations" onClick={closeMenus} role="menuitem" style={{ "--i": "3" }}>
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-05-749d8ea2f0.jpg" alt="" loading="lazy" />
                       <span>Operate</span>
                     </Link>
                     <Link to="/data-center-cooling" onClick={closeMenus} role="menuitem" style={{ "--i": "4" }}>
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-06-a61d1013f2.jpg" alt="" loading="lazy" />
                       <span>Cooling</span>
                     </Link>
                     <Link to="/data-center-ai" onClick={closeMenus} role="menuitem" style={{ "--i": "5" }}>
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-07-62fce3caf3.jpg" alt="" loading="lazy" />
                       <span>AI data center</span>
                     </Link>
                   </div>
@@ -555,7 +555,7 @@ export default function Header() {
                       role="menuitem"
                       style={{ "--i": "0" }}
                     >
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-08-d45099ac5c.jpg" alt="" loading="lazy" />
                       <span>Finance</span>
                     </Link>
                     <Link
@@ -564,15 +564,15 @@ export default function Header() {
                       role="menuitem"
                       style={{ "--i": "1" }}
                     >
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-09-c214ac8037.jpg" alt="" loading="lazy" />
                       <span>{"Public & Health"}</span>
                     </Link>
                     <Link to="/industries-manufacturing" onClick={closeMenus} role="menuitem" style={{ "--i": "2" }}>
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-10-c730a88655.jpg" alt="" loading="lazy" />
                       <span>Manufacturing</span>
                     </Link>
                     <Link to="/industries-energy-resources" onClick={closeMenus} role="menuitem" style={{ "--i": "3" }}>
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-11-93cb3d9c3a.jpg" alt="" loading="lazy" />
                       <span>Energy</span>
                     </Link>
                     <Link
@@ -581,7 +581,7 @@ export default function Header() {
                       role="menuitem"
                       style={{ "--i": "4" }}
                     >
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-12-b050dbf75f.jpg" alt="" loading="lazy" />
                       <span>{"Tech & Media"}</span>
                     </Link>
                     <Link
@@ -590,7 +590,7 @@ export default function Header() {
                       role="menuitem"
                       style={{ "--i": "5" }}
                     >
-                      <img src={logoIcon} alt="" loading="lazy" />
+                      <img src="/images/img-13-d14043565a.jpg" alt="" loading="lazy" />
                       <span>Services</span>
                     </Link>
                   </div>

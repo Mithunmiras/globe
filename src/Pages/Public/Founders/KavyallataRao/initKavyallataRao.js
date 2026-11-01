@@ -20,7 +20,6 @@ export default function initKavyallataRao(H, R) {
   };
 
 
-const IMG={"c-ddp.jpg": "/images/img-80-55777f98cd.jpg", "c-esg.jpg": "/images/img-81-62d7bfb19d.jpg", "c-brsr.jpg": "/images/img-82-29040a51bf.jpg", "c-iica.jpg": "/images/img-83-883345335b.jpg", "c-cxo.jpg": "/images/img-84-9762d85ffe.jpg", "c-ntt.jpg": "/images/img-85-31abb55a13.jpg", "c-cyberres.jpg": "/images/img-86-3689a25b0f.jpg", "c-dataprivacy.jpg": "/images/img-87-db8718fe7f.jpg", "c-phishing.jpg": "/images/img-88-a5871935e5.jpg", "c-sales.jpg": "/images/img-89-2fc4fa0a59.jpg"};
 
 const C=[
  {f:"gov",img:"c-ddp.jpg",t:"Digital Directors' Program",by:"Directors' Institute – World Council of Directors",d:"Certified Digital Director · effective 16 Feb 2025",id:"DDP-2025DI1931602"},
@@ -34,23 +33,13 @@ const C=[
  {f:"tech",img:"c-phishing.jpg",t:"ePlus Cybersecurity Fundamentals: Types of Phishing",by:"ePlus",d:"22 June 2026 · 4 minutes"},
  {f:"lead",img:"c-sales.jpg",t:"Sales Positioning and Resources",by:"ePlus",d:"22 June 2026 · 9 minutes"}
 ];
-const grid=R.getElementById('certs');let shown=C.map((_,i)=>i),cur=0;
+const grid=R.getElementById('certs');
 function render(f){
-  shown=C.map((c,i)=>i).filter(i=>f==='all'||C[i].f===f);
-  grid.innerHTML=shown.map((i,k)=>{const c=C[i];return `<figure class="cert"><button type="button" data-k="${k}" aria-label="View ${c.t} full size"><img src="${IMG[c.img]}" alt="${c.t} certificate awarded to Kavyallata Rao" loading="lazy"></button><figcaption><b>${c.t}</b><span>${c.by}</span><span>${c.d}</span>${c.id?`<code>Vide no: ${c.id}</code>`:''}</figcaption></figure>`}).join('');
+  grid.innerHTML=C.filter(c=>f==='all'||c.f===f).map(c=>`<article class="cert"><span class="ci"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.6 13.4 7 21l5-3 5 3-1.6-7.6"/></svg></span><div class="cb"><h3>${c.t}</h3><span class="by">${c.by}</span><span class="cd">${c.d}</span></div></article>`).join('');
 }
 render('all');
 R.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
   R.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));render(b.dataset.f)});
-const lb=R.getElementById('lb'),li=R.getElementById('lbimg'),lc=R.getElementById('lbcap');let last;
-function open(k){cur=(k+shown.length)%shown.length;const c=C[shown[cur]];li.src=IMG[c.img];li.alt=c.t;lc.textContent=`${c.t} · ${c.by} · ${c.d}`;lb.hidden=false;R.getElementById('lbx').focus()}
-function close(){lb.hidden=true;last&&last.focus()}
-grid.addEventListener('click',e=>{const b=e.target.closest('button[data-k]');if(b){last=b;open(+b.dataset.k)}});
-R.getElementById('lbx').onclick=close;
-R.getElementById('lbp').onclick=()=>open(cur-1);
-R.getElementById('lbn').onclick=()=>open(cur+1);
-lb.addEventListener('click',e=>{if(e.target===lb)close()});
-addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')open(cur+1);if(e.key==='ArrowLeft')open(cur-1)});
 R.getElementById('copy').onclick=async function(){const t=R.getElementById('em').textContent;
   try{await navigator.clipboard.writeText(t);this.textContent='Copied'}catch(_){const r=document.createRange();r.selectNodeContents(R.getElementById('em'));const s=getSelection();s.removeAllRanges();s.addRange(r);this.textContent='Selected – press copy'}
   setTimeout(()=>this.textContent='Copy email',2000)};
@@ -108,7 +97,6 @@ panel.addEventListener('touchend',e=>{if(sx==null)return;const dx=e.changedTouch
 if(!reduce&&matchMedia('(hover:hover)').matches){
   const tilt=(el,max)=>{el.classList.add('tilt');el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;el.style.transform=`perspective(800px) rotateY(${px*max}deg) rotateX(${-py*max}deg) translateZ(0)`});el.addEventListener('pointerleave',()=>el.style.transform='')};
   tilt(R.querySelector('.portrait'),8);
-  R.getElementById('certs').addEventListener('pointerover',e=>{const b=e.target.closest('.cert button');if(b&&!b.dataset.t){b.dataset.t=1;tilt(b,10)}});
   const hero=R.querySelector('.hero'),glow=document.createElement('div');glow.className='cursor-glow';hero.appendChild(glow);
   hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();glow.style.left=(e.clientX-r.left)+'px';glow.style.top=(e.clientY-r.top)+'px'});
 }

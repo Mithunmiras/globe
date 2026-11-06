@@ -72,7 +72,7 @@ export default function HeroSection() {
               <Icon name="cpu" />
             </span>
             <p>
-              <b>3,700 GPUs delivered</b>
+              <b>3,700 GPUs proposed</b>
               <small>2.52 MW of AI heat removed</small>
             </p>
           </Link>

@@ -2955,6 +2955,10 @@ div.dx-flow>ol>li svg{width:15px;height:15px}
 #team-list .bio,#board-list .bio{display:block!important;-webkit-line-clamp:unset!important;line-clamp:unset!important;max-height:none!important;overflow:visible!important}
 #team-list .bio-more,#board-list .bio-more{display:none!important}
 #team-list .card.person{align-content:start}
+/* About: profiles with a full page keep the short-summary "Read more" toggle */
+#team-list .person.clamp .bio,#board-list .person.clamp .bio{display:-webkit-box!important;-webkit-line-clamp:3!important;line-clamp:3!important;max-height:none;overflow:hidden!important}
+#team-list .person.clamp.open .bio,#board-list .person.clamp.open .bio{display:block!important;-webkit-line-clamp:unset!important;line-clamp:unset!important;overflow:visible!important}
+#team-list .person.clamp .bio-more,#board-list .person.clamp .bio-more{display:inline-block!important}
 /* compact services menu: 4 columns */
 .mega:not(.dl-mega){width:min(1080px,calc(100vw - 48px))}
 .mega:not(.dl-mega) .mega-cols{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px 8px}

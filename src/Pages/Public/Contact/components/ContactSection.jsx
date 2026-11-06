@@ -11,7 +11,7 @@ export default function ContactSection() {
           <p style={{ color: "var(--muted)", fontSize: "14px", marginBottom: "20px" }}>
             Enquiries go to{" "}
             <span className="copyable" style={{ color: "var(--ink)" }}>
-              sales@digitalglobe.co.in
+              coo@digitalglobe.co.in
             </span>
           </p>
           <ContactForm />
@@ -50,8 +50,8 @@ export default function ContactSection() {
               <div>
                 <b>Sales</b>
                 <br />
-                <a className="copyable" href="mailto:sales@digitalglobe.co.in">
-                  sales@digitalglobe.co.in
+                <a className="copyable" href="mailto:coo@digitalglobe.co.in">
+                  coo@digitalglobe.co.in
                 </a>
               </div>
             </div>

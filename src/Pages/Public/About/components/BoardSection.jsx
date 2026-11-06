@@ -41,7 +41,7 @@ export default function BoardSection() {
             <div className="bd-ph">
               <img src="/images/img-50-0fd6714801.jpg" alt="Kavyallata Rao" />
             </div>
-            <div className="person">
+            <div className="person clamp">
               <div>
                 <div className="role">{"Co-founder & CMD"}</div>
                 <h3>Kavyallata Rao</h3>

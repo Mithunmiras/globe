@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function LeadershipSection() {
   return (
@@ -14,7 +15,7 @@ export default function LeadershipSection() {
           <p>Leaders across technology, operations, growth, marketing and information management.</p>
         </div>
         <div className="g g3" id="team-list" data-dyn="">
-          <article className="card person">
+          <article className="card person clamp">
             <div className="avatar" aria-hidden="true">
               Y
             </div>
@@ -22,7 +23,17 @@ export default function LeadershipSection() {
               <div className="role">{"CTO & CIO"}</div>
               <h3>Yogesh</h3>
             </div>
-            <div className="pending">Profile coming soon.</div>
+            <p className="bio">
+              Technology leader with 22+ years across IT infrastructure, data centres, cloud, cybersecurity, ERP and
+              AI/ML, spanning manufacturing, defence, aerospace and energy. He has led IT operations across 25
+              locations and an SAP S/4HANA transformation that migrated 30M+ records.
+            </p>
+            <button type="button" className="bio-more">
+              Read more
+            </button>
+            <Link to="/yogesh-prajapati" className="prof-link">
+              View full profile →
+            </Link>
           </article>
           <article className="card person">
             <div className="avatar" aria-hidden="true">
@@ -100,7 +111,14 @@ export default function LeadershipSection() {
               <div className="role">Chief Product Officer</div>
               <h3>Kamal</h3>
             </div>
-            <div className="pending">Profile coming soon.</div>
+            <p className="bio">
+              Leads Decibels & Pixels Solutions, which has delivered Audio-Visual Systems Integration, Lighting
+              Control, Smart Home, Security and Network solutions since 2012. Backed by 28 years of industry
+              expertise, its projects range from NOCs and SOCs to Customer Briefing Centers and Auditoriums.
+            </p>
+            <button type="button" className="bio-more">
+              Read more
+            </button>
           </article>
           <article className="card person">
             <div className="avatar" aria-hidden="true">

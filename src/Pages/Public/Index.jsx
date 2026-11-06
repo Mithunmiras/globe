@@ -9,6 +9,7 @@ const PageNotFound = React.lazy(() => import("../PageNotFound/Index"));
 const About = React.lazy(() => import("./About/Index"));
 const KavyallataRao = React.lazy(() => import("./Founders/KavyallataRao/Index"));
 const GithikkaRao = React.lazy(() => import("./Founders/GithikkaRao/Index"));
+const YogeshPrajapati = React.lazy(() => import("./Founders/YogeshPrajapati/Index"));
 const DataCenter = React.lazy(() => import("./DataCenter/Index"));
 const DataCenterStrategy = React.lazy(() => import("./DataCenter/Strategy/Index"));
 const DataCenterDesign = React.lazy(() => import("./DataCenter/Design/Index"));
@@ -55,6 +56,7 @@ const Index = () => {
             <Route path="/about" element={<About />} />
             <Route path="/kavyallata-rao" element={<KavyallataRao />} />
             <Route path="/githikka-rao" element={<GithikkaRao />} />
+            <Route path="/yogesh-prajapati" element={<YogeshPrajapati />} />
             <Route path="/data-center" element={<DataCenter />} />
             <Route path="/data-center-strategy" element={<DataCenterStrategy />} />
             <Route path="/data-center-design" element={<DataCenterDesign />} />
